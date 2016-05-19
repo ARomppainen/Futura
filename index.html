@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script data-main="js/config" src="js/lib/require.js"></script>
+</head>
+
+<body>
+	<canvas id="webgl-canvas" width="700" height="500"></canvas>
+	<form>
+	<table>
+		<tr>
+			<td></td>
+			<td>Pallo 1</td>
+			<td>Pallo 2</td>
+		</tr>
+		<tr>
+			<td>Massa:</td>
+			<td><input id="p1m" type="number" min="0.1" max="10" value="1" step="0.1"></td>
+			<td><input id="p2m" type="number" min="0.1" max="10" value="1" step="0.1"></td>
+		</tr>
+		<tr>
+			<td>Koko:</td>
+			<td><input id="p1s" type="number" min="0.1" max="5" value="1" step="0.1"></td>
+			<td><input id="p2s" type="number" min="0.1" max="5" value="1" step="0.1"></td>
+		</tr>
+		<tr>
+			<td>Asema x:</td>
+			<td><input id="p1px" type="number" min="-3" max="3" value="-1" step="0.1"></td>
+			<td><input id="p2px" type="number" min="-3" max="3" value="1" step="0.1"></td>
+		</tr>
+		<tr>
+			<td>Asema y:</td>
+			<td><input id="p1py" type="number" min="-3" max="3" value="-0.2" step="0.1"></td>
+			<td><input id="p2py" type="number" min="-3" max="3" value="0.2" step="0.1"></td>
+		</tr>
+		<tr>
+			<td>Nopeus x:</td>
+			<td><input id="p1vx" type="number" min="-10" max="10" value="0.5" step="0.1"></td>
+			<td><input id="p2vx" type="number" min="-10" max="10" value="-0.5" step="0.1"></td>
+		</tr>
+		<tr>
+			<td>Nopeus y:</td>
+			<td><input id="p1vy" type="number" min="-10" max="10" value="0" step="0.1"></td>
+			<td><input id="p2vy" type="number" min="-10" max="10" value="0" step="0.1"></td>
+		</tr>
+		<tr>
+			<td>Sysäyskerroin:</td>
+			<td><input id="e" type="number" min="0" max="1" value="1" step="0.1"></td>
+		</tr>
+	</table>
+	</form>
+	<h3>Kontrollit:</h3>
+	<p>
+		[W, S, A, D] - liikuta kameraa eteen, taakse, vasemmalle tai oikealle</br>
+		[Z, X] - liikuta kameraa ylös tai alas</br>
+		[R] - siirrä pallot lähtöasemiin uusilla arvoilla
+	</p>
+</body>
+</html>
